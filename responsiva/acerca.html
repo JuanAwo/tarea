@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer" /> 
+    <title>Biografia</title>
+  </head>
+   <body class="barba" data-barba="wrapper">
+    <div data-barba="container" data-barba-namespace="inicio">
+    <header>
+      <div class="navbar">
+        <div class="logo"><a href="index.html">JFLOPEZ</a></div>
+        <ul class="links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="acerca.html">Acerca de</a></li>
+          <li><a href="servicios.html">Estudios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <a href="servicios.html" class="accion_btn">Siguiente</a>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+          
+        </div>
+      </div>
+      <div class="dropdown_menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="acerca.html">Acerca de</a></li>
+        <li><a href="servicios.html">Estudios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="#" class="accion_btn">Empezar</a></li>
+      </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--Acerca de -->
+
+    <div class="row-container">
+
+
+      <div class="col-md-4 col-md-6 row" >
+        <div class="icon-area">
+            <img src="Imagenes/DIOMEDES.jpg">
+        </div>
+        <br>
+        <h4>¿Quien soy yo?</h4>
+        <br>
+        <p>Mi nombre es Juan Fernando López Guzmán, tengo 21 años, soy el menor de 4 hermanos,
+          estudio actualmente Ingenieria en Software en el Tecnologico de Antioquia.
+        </p>
+      </div>
+        
+        <div class="col-md-4 col-sm-6 row">
+            <div class="icon-area">
+                <img src="Imagenes/diomedes.jpeg" >
+            </div>
+            <br>
+            <h4>Nacimiento</h4>
+            <br>
+            <p class="parrafo">Nací el 20 de enero de 2002, en el centro de salud de Santo Domingo Savio en,
+                Medellín-Antioquia.  </p>
+        </div>
+        <!--Utlizar el strong para las negrillas-->
+
+        <div class="col-md-4 col-md-6 row" >
+            <div class="icon-area">
+                <img src="Imagenes/dio.webp">
+            </div>
+            <br>
+            <h4>Hobbies</h4>
+            <br>
+            <ul class="lista">
+            <li>-Tocar instrumentos</li>
+            <li>-Producción Musical</li>
+            <li>-Programar</li>
+            <li>-Componer</li> 
+            <li>-Hacer Deporte</li></ul>
+
+        </div>
+
+        
+    </div>
+
+   
+
+    
+
+
+    <!--Script-->
+
+    <script>
+      const toggleBtn = document.querySelector('.toggle_btn')
+      const toggleBtnIcon = document.querySelector('.toggle_btn i')
+      const dropDownMenu = document.querySelector('.dropdown_menu')
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+      }
+    </script>
+
+    <!--Script-->
+  
+  </div>
+  </body>
+  <script type="text/javascript" src="barba.min.js"></script>
+  <script type="text/javascript" src="custom.js"></script>
+  
+</html>
