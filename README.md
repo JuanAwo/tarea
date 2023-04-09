@@ -1,1 +1,1 @@
-# tarea
+En este repositorio encontraras la actividad evaluativa #2 de construccion de software 3 de Juan Fernando Lopez Guzman. Para esta actividad se utilizo, HTML, CSS, JavaScript,boostrap y barba.js. Ademas se utilizaron los temas basicos de css para como selección de elementos, propiedades de estilo, modelo de caja, diseño de página, tipografıa, transformaciones y transiciones, y responsive design, así mismo se utilizaron algunas animaciones para volver la pagina web un poco mas dinamica. 
